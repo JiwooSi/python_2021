@@ -1,0 +1,17 @@
+def solution(arr) :
+    n=0
+    while n<10 :
+        n = n+1
+        a = arr.count(n)
+        if a == 1:
+            continue
+        else :
+            b = [arr.index(a)]
+            n_1 = 0
+            if b[n_1]+1 == b[n_1 + 1] :
+                n_1 = n_1+1
+                b.remove(n_1)
+                arr.remove(b[n_1])
+            else:
+                break
+    return print(arr)
