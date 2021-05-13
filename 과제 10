@@ -1,0 +1,40 @@
+color_change = {'b' : 'blue', 'r' : 'red', 'g' : 'green'}
+shape_change_shape = {3 : 'triangle', 4 : 'square', 5 : 'pentagon'}
+
+print(color_change)
+want_c = input('원하는 색의 단축어를 누르시오. :')
+print(shape_change_shape)
+want_s = int(input('원하는 모양의 단축어를 누르시오. :'))
+
+import turtle
+t=turtle.Turtle()
+
+def triangle():
+    for j in range(3):
+        t.fd(30)
+        t.lt(120)
+def square():
+    for i in range(4):
+        t.fd(30)
+        t.lt(90)
+def pentagon():
+    for h in range(5):
+        t.fd(30)
+        t.lt(72)
+        
+def want(x, y):
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+    t.begin_fill()
+    def color_ch_1():
+        global want_c
+        if want_c == 'r':
+            t.color('red')
+        elif want_c == 'g':
+            t.color('green')
+        else:
+            t.color('blue')    
+    s.onkey(color_ch_1(),want_c)
+    def shape_ch():
+        global want_s
