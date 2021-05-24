@@ -1,0 +1,35 @@
+store = {'우유' : 1, '종이컵' : 2, '책' : 5, '커피음료' : 7, '콜라' : 4, '펜' : 3}
+while True:
+    print('='*20, '     물품 목록', '='*20, sep = '\n')
+    print('     우유 :',  store['우유'])
+    print('     종이컵 : ', store['종이컵'])
+    print('     책 : ', store['책'])
+    print('     커피음료 : ', store['커피음료'])
+    print('     콜라 : ', store['콜라'])
+    print('     펜 : ', store['펜'])
+    print('='*20)
+    print(
+        )
+    print('물품 목록 구매나 보충 선택 --> 구매 : 1, 보충: 2, quit:0')
+    w = int(input('원하는 번호를 선택하세요 --> '))
+    if w == 1:
+        w_buy = input('구매할 물품의 이름을 입력하세요 : ')
+        w_buy_n = int(input('구매할 수량을 입력하세요 : '))
+        if w_buy_n > store[w_buy]:
+            print(w_buy, '--> 재고량이 부족해서', store[w_buy], '개만 구매함...')
+            store[w_buy] = 0
+            continue
+        else :
+            print(w_buy, '--> 구매 성공')
+            w_buy_ch = store[w_buy]-w_buy_n
+            store[w_buy] = w_buy_ch
+            continue
+    elif w == 2:
+        w_add = input('보충할 물품의 이름을 입력하세요 : ')
+        w_add_n = int(input('보충할 수량을 입력하세요 : '))
+        w_add_ch = store[w_add]+w_add_n
+        store[w_add] = w_add_ch
+        continue
+    else :
+        print('종료합니다...')
+    break
