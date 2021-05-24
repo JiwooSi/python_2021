@@ -1,0 +1,81 @@
+m_1s = []
+m_2s = []
+m_3s = []
+q = 1
+m_1 = 1
+for q in range(1,2001):
+    q = q+1
+    for i in range(0,6):
+        m_1 = m_1+1
+        m_1s.append(m_1)
+for w in range(1,1251):
+    m_2s.append(2)
+    m_2s.append(1)
+    m_2s.append(2)
+    m_2s.append(3)
+    m_2s.append(2)
+    m_2s.append(4)
+    m_2s.append(2)
+    m_2s.append(5)
+for e in range(1,1000):
+    m_3s.append(3)
+    m_3s.append(3)
+    m_3s.append(1)
+    m_3s.append(1)
+    m_3s.append(2)
+    m_3s.append(2)
+    m_3s.append(4)
+    m_3s.append(4)
+    m_3s.append(5)
+    m_3s.append(5)
+t_as = []
+
+for t_a in range(1,10001):
+    t_a = t_a + 1
+    import random 
+    t_a = random.randint(1,5)
+    t_as.append(t_a)
+    
+for test in range(1,10001):
+    total_1 = 0
+    test = 1
+    test = test + 1
+    if m_1s[test] == t_a[test]:
+        total_1 =+ 1
+    else :
+        total_1 =+ 0
+        
+for test in range(1,10001):
+    total_2 = 0
+    test = 1
+    test = test + 1
+    if m_2s[test] == t_a[test]:
+        total_2 =+ 1
+    else :
+        total_2 =+ 0
+        
+for test in range(1,10001):
+    total_3 = 0
+    test = 1
+    test = test + 1
+    if m_3s[test] == t_a[test]:
+        total_3 =+ 1
+    else :
+        total_3 =+ 0
+        
+print( '수포자 1은', total_1,'개만큼 문제를 맞췄습니다.')
+print( '수포자 2은', total_2,'개만큼 문제를 맞췄습니다.')
+print( '수포자 3은', total_3,'개만큼 문제를 맞췄습니다.')
+
+if total_1 > total_2 and total_3:
+    print('가장 많이 맞춘 사람은 수포자1 입니다.')
+elif total_2 > total_1 and total_3:
+    print('가장 많이 맞춘 사람은 수포자2 입니다.')
+else:
+    print('가장 많이 맞춘 사람은 수포자3 입니다.')
+
+def solution() :
+    for k in range (1,10001):
+        if answers[k] == total_1[k]:
+            
+        
