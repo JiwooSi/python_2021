@@ -1,0 +1,10 @@
+def solution(n, m):
+    1 <= n <= 1000000
+    1 <= m <= 1000000
+    while True :
+        k=1
+        if n and m % k = 0 :
+            k = k+1
+            
+    answer = ['잘 모르겠어요 ;-;...']
+    return answer
