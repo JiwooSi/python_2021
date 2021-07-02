@@ -1,0 +1,7 @@
+def solution(phone_number):
+    if 4 <= len(phone_number) <= 20 :
+        phone_number = '*'*(len(phone_number)-4) + phone_number[len(phone_number)-4: ]
+    else:
+        print('번호가 잘못되었습니다.')
+    answer = phone_number
+    return answer
