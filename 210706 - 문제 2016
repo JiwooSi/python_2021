@@ -1,0 +1,115 @@
+def solution(a, b):
+    n = 7 or 14 or 21 or 28
+    if a = 1 or a = 4 or a = 7:
+        if b = 1 or 1 + n :
+            answer = 'FRI'
+        elif b = 2 or 2 + n : 
+            answer = 'SAT'
+        elif b = 3 or 3 + n : 
+            answer = 'SUN'
+        elif  b = 4 or 4 + n :
+            answer = 'MON'
+        elif  b = 5 or 5 + n :
+            answer = 'TUE'
+        elif  b = 6 or 6 + n :
+            answer = 'WED'
+        elif  b = 7 or 7 + n :
+            answer = 'THU'
+            
+    elif a = 2 and a = 8 :
+        if b = 1 or 1 + n :
+            answer = 'MON'
+        elif b = 2 or 2 + n : 
+            answer = 'TUE'
+        elif b = 3 or 3 + n : 
+            answer = 'WED'
+        elif  b = 4 or 4 + n :
+            answer = 'THU'
+        elif  b = 5 or 5 + n :
+            answer = 'FRI'
+        elif  b = 6 or 6 + n :
+            answer = 'SAT'
+        elif  b = 7 or 7 + n :
+            answer = 'SUN'
+            
+    elif a = 3 and a = 11:
+        if b = 1 or 1 + n :
+            answer = 'TUE'
+        elif b = 2 or 2 + n : 
+            answer = 'WED'
+        elif b = 3 or 3 + n : 
+            answer = 'THU'
+        elif  b = 4 or 4 + n :
+            answer = 'FRI'
+        elif  b = 5 or 5 + n :
+            answer = 'SAT'
+        elif  b = 6 or 6 + n :
+            answer = 'SUN'
+        elif  b = 7 or 7 + n :
+            answer = 'MON'
+            
+    elif a = 5:
+        if b = 1 or 1 + n :
+            answer = 'SUN'
+        elif b = 2 or 2 + n : 
+            answer = 'MON'
+        elif b = 3 or 3 + n : 
+            answer = 'TUE'
+        elif  b = 4 or 4 + n :
+            answer = 'WED'
+        elif  b = 5 or 5 + n :
+            answer = 'THU'
+        elif  b = 6 or 6 + n :
+            answer = 'FRI'
+        elif  b = 7 or 7 + n :
+            answer = 'SAT'
+            
+    elif a = 6:
+        if b = 1 or 1 + n :
+            answer = 'WED'
+        elif b = 2 or 2 + n : 
+            answer = 'THU'
+        elif b = 3 or 3 + n : 
+            answer = 'FRI'
+        elif  b = 4 or 4 + n :
+            answer = 'SAT'
+        elif  b = 5 or 5 + n :
+            answer = 'SUN'
+        elif  b = 6 or 6 + n :
+            answer = 'MON'
+        elif  b = 7 or 7 + n :
+            answer = 'TUE'
+            
+    elif a = 9 and a = 13:
+        if b = 1 or 1 + n :
+            answer = 'THU'
+        elif b = 2 or 2 + n : 
+            answer = 'FRI'
+        elif b = 3 or 3 + n : 
+            answer = 'SAT'
+        elif  b = 4 or 4 + n :
+            answer = 'SUN'
+        elif  b = 5 or 5 + n :
+            answer = 'MON'
+        elif  b = 6 or 6 + n :
+            answer = 'TUE'
+        elif  b = 7 or 7 + n :
+            answer = 'WED'
+            
+        elif a = 10:
+        if b = 1 or 1 + n :
+            answer = 'SAT'
+        elif b = 2 or 2 + n : 
+            answer = 'SUN'
+        elif b = 3 or 3 + n : 
+            answer = 'MON'
+        elif  b = 4 or 4 + n :
+            answer = 'TUE'
+        elif  b = 5 or 5 + n :
+            answer = 'WED'
+        elif  b = 6 or 6 + n :
+            answer = 'THU'
+        elif  b = 7 or 7 + n :
+            answer = 'FRI'
+            
+    return answer
